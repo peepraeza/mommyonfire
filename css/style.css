@@ -1,0 +1,97 @@
+.thumbnail {
+	border-radius:0;
+	border:none;
+	position:relative;
+	padding:0;
+	margin-bottom:30px;
+}
+.thumbnail .mask {
+	position:absolute;
+	top:0;
+	left:0;
+	background:#FB6816;
+	opacity:0;
+	width:100%;
+	height:100%;
+	transition: opacity 0.5s;
+}
+.thumbnail .mask a {
+	color:#fff;
+	position:absolute;
+	font-size:17px;
+}
+.thumbnail .mask .search {
+	left:50%;
+	margin-left:-40px;
+	bottom:0;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+.thumbnail .mask:hover .search {
+	bottom:50%;
+	margin-top: -8px;
+}
+
+.thumbnail .mask .link{
+	left:50%;
+	margin-left:16px;
+	bottom:100%;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+.thumbnail .mask:hover .link {
+	bottom:50%;
+	margin-top: -8px;
+}
+.thumbnail:hover .mask {
+	opacity:0.9;
+}
+.thumbnail.person {
+	overflow:hidden;
+	border-top: 6px solid #FB6816
+}
+.thumbnail.person .mask {
+	left:-75%;
+	top:60%;
+	width:75%;
+	height:50px;
+	opacity:0.7;
+	background: #44495e;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+.thumbnail.person:hover .mask{
+	left:0;
+}
+
+.thumbnail.person .mask p {
+	padding:5px;
+	padding-left:30px;
+	color:#fff;
+}
+.person-title {
+	padding:10px;
+	background:#44495e;
+	border-top:6px solid #FB6816;
+}
+.person-title h3 {
+	font-size:35px;
+	line-height:1.1em;
+	color:#fff;
+}
+.person-title p {
+	color:#FB6816;
+	font-size:20px;
+	margin:0;
+}

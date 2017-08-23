@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<!--[if IE 8 ]><html class="no-js oldie ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+
+   <!--- basic page needs
+   ================================================== -->
+   <meta charset="utf-8">
+    <title>Mommy on Fire</title>
+    <meta name="description" content="">  
+    <meta name="author" content="">
+
+   <!-- mobile specific metas
+   ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- CSS
+   ================================================== -->
+   <link rel="stylesheet" href="css/base.css">  
+   <link rel="stylesheet" href="css/main.css">
+   <link rel="stylesheet" href="css/vendor.css">     
+
+   <!-- script
+   ================================================== -->
+    <script src="js/modernizr.js"></script>
+
+   <!-- favicons
+    ================================================== -->
+    <link rel="icon" type="image/png" href="favicon.png">
+
+</head>
+
+<body id="top">
+
+    <!-- header 
+   ================================================== -->
+   <header>
+
+    <div class="row">
+
+        
+
+        <nav id="main-nav-wrap">
+            <ul class="main-navigation">
+               <li><a href="index.html" title="">Home</a></li>
+               <li><a href="service.html" title="">Service</a></li>
+               <li><a href="booking.html" title="">Booking</a></li>
+               <li><a href="about.html" title="">About us</a></li>
+               <li class="current"><a href="#contact" title="">Contact</a></li>             
+               <li class="highlight with-sep">           
+                  <div class='login-link'>
+                     <a href="#login-popup" title="">Sign Up</a>
+                  </div>
+               </li>             
+            </ul>
+         </nav>
+
+            <a class="menu-toggle" href="#"><span>Menu</span></a>
+        
+    </div>      
+    
+  </header> <!-- /header -->
+
+  <!-- Modal Popup
+      ========================================================= -->   
+
+      <div id="login-popup" class="login-block mfp-hide">
+
+         <h1>Login</h1>
+         <input type="text" value="" placeholder="Username" id="username" />
+         <input type="password" value="" placeholder="Password" id="password" />
+         <button>Submit</button>
+         <div class="footer">
+            <div class='login-link'>
+            <span>Looking to              
+               <a href="#reg-popup">create an account</a>
+            ?</span>
+            </div>
+         </div>
+         <a class="close-popup">Close</a> 
+
+      </div > 
+
+      <div id="reg-popup" class="reg-block mfp-hide">
+
+         <h1>Register</h1>
+         <input type="text" value="" placeholder="Username" id="username" />
+         <input type="password" value="" placeholder="Password" id="password" />
+         <input type="password" value="" placeholder="Confirm Password" id="confirm" />
+         <input type="text" value="" placeholder="Name" id="name" />
+         <input type="text" value="" placeholder="Last Name" id="lastname" />
+         <input type="text" value="" placeholder="Email" id="email" />
+         <button>Submit</button>
+         <div class="footer">
+            <div class='login-link'>
+            <span>Already a member? 
+               <a href="#login-popup">Log in</a>
+            </span>
+            </div>
+         </div>
+         <a class="close-popup">Close</a> 
+
+      </div >  
+      <div id="line-popup" class="line-block mfp-hide">
+
+         <h1>LINE</h1>
+         <a class="qrline"><img src="images/qrline.jpg" alt=""></a>
+         <div class="footer">
+            <span>LINE ID: abcdefg</span>
+         </div>
+         <a class="close-popup">Close</a> 
+
+      </div >
+
+  <!-- Contact
+      ========================================================= --> 
+  <section id="contact">   
+      <div class="row section-intro">
+         <div class="col-twelve with-bottom-line">
+            <h5>Contact</h5>
+            <h1>Have a question for us?</h1>
+
+            <p class="lead"></p>
+
+         </div>         
+      </div>
+      </div>
+      <form class="row contact-content" action="sendmail.php" method="post" name="frmMain">
+        <div class="col-2">
+            <label>
+                <input type="text" tabindex="1" name="name">
+                <span>Name:</span>
+            </label>
+            <label>
+                <input type="email" tabindex="2" name="email">
+                <span>Email:</span>
+            </label>
+            <label>
+                <input type="text" tabindex="3" name="subject">
+                <span>Subject:</span>
+            </label>
+        </div>
+        <div class="col-2">
+            <label>
+                <textarea tabindex="4" name="message"></textarea>
+                <span>Message:</span>
+            </label>
+        </div>
+        <div class="row">
+        <div class="col-twelve">
+        <div class="col-2">
+          <div class='video-link'>
+                  <a href="http//:www.facebook.com"><img src="images/social2.png" alt=""></a>
+                  <a href="#line-popup"><img src="images/line.png" alt=""></a>
+          </div>
+              <h1>Tel :    090-999-9999</h1>
+              <h1>Email :    mommyonfire@hotmail.com</h1>
+            
+          </div>
+          <div class="col-2">
+          <input class="button stroke" type="submit" tabindex="5" value="Send">
+          </div>
+        </div>
+        </div>
+      </form>
+      
+    </section>
+    <!-- faq
+   ================================================== -->
+   <section id="faq">
+
+    <div class="row section-intro">
+      <div class="col-twelve with-bottom-line">
+
+        <h5>Faq</h5>
+        <h1>Questions and Answers.</h1>
+
+        <p class="lead">Lorem ipsum Do commodo in proident enim in dolor cupidatat adipisicing dolore officia nisi aliqua incididunt Ut veniam lorem ipsum Consectetur ut in in eu do.</p>
+
+      </div>      
+    </div>
+
+    <div class="row faq-content">
+
+      <div class="q-and-a block-1-2 block-tab-full group">
+
+        <div class="bgrid">
+
+          <h3>What are the security features?</h3>
+
+          <p>Lorem ipsum Id in magna ad culpa dolor eu aute non amet aute ea in consectetur in quis nostrud anim proident dolore in sed et mollit voluptate culpa irure consequat laborum ea sint in mollit adipisicing cupidatat.</p>
+
+        </div>
+
+        <div class="bgrid">
+
+          <h3>How can I update my user profile?</h3>
+
+          <p>Lorem ipsum Id in magna ad culpa dolor eu aute non amet aute ea in consectetur in quis nostrud anim proident dolore in sed et mollit voluptate culpa irure consequat laborum ea sint in mollit adipisicing cupidatat.</p>
+
+        </div>
+
+        <div class="bgrid">
+
+          <h3>What features are not included in the free version?</h3>
+
+          <p>Lorem ipsum Id in magna ad culpa dolor eu aute non amet aute ea in consectetur in quis nostrud anim proident dolore in sed et mollit voluptate culpa irure consequat laborum ea sint in mollit adipisicing cupidatat.</p>
+
+        </div>
+
+        <div class="bgrid">
+
+          <h3>Can I upgrade my account from Starter to Premium?</h3>
+
+          <p>Lorem ipsum Id in magna ad culpa dolor eu aute non amet aute ea in consectetur in quis nostrud anim proident dolore in sed et mollit voluptate culpa irure consequat laborum ea sint in mollit adipisicing cupidatat.</p>
+
+        </div>
+
+        <div class="bgrid">
+
+          <h3>Where can I found all my uploads?</h3>
+
+          <p>Lorem ipsum Id in magna ad culpa dolor eu aute non amet aute ea in consectetur in quis nostrud anim proident dolore in sed et mollit voluptate culpa irure consequat laborum ea sint in mollit adipisicing cupidatat.</p>
+
+        </div>
+
+        <div class="bgrid">
+
+          <h3>How long can I use the free trial version?</h3>
+
+          <p>Lorem ipsum Id in magna ad culpa dolor eu aute non amet aute ea in consectetur in quis nostrud anim proident dolore in sed et mollit voluptate culpa irure consequat laborum ea sint in mollit adipisicing cupidatat.</p>
+
+        </div>
+
+      </div> <!-- /q-and-a --> 
+      
+    </div> <!-- /faq-content --> 
+   </section> <!-- /faq --> 
+
+    <!-- Java Script
+   ================================================== --> 
+   <script src="js/jquery-1.11.3.min.js"></script>
+   <script src="js/jquery-migrate-1.2.1.min.js"></script>
+   <script src="js/plugins.js"></script>
+   <script src="js/main.js"></script>
+
+</body>
+
+</html>
