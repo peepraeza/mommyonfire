@@ -150,6 +150,7 @@
   			item.push($(this).val());
 		});
 		localStorage.setItem("book1", item);
+		localStorage.setItem("price1",item.length);
 		});
   	});
 
@@ -186,6 +187,7 @@
     	localStorage.setItem("date", $("input[name='dropp']:checked").val());
     	localStorage.setItem("day1", $('#date1').val());
     	localStorage.setItem("day2", $('#date2').val());
+    	localStorage.setItem("total", $('#price').val());
     });
 	});
 
@@ -194,42 +196,47 @@
 	}
 
 	if (localStorage.getItem("name")) {
-		$('#datail1').text(localStorage.getItem("name"));
+		$("input[name=name]").val(localStorage.getItem("name"));
+		$('#datail1').val(localStorage.getItem("name"));
 	}
 	if (localStorage.getItem("tel")) {
-		$('#datail2').text(localStorage.getItem("tel"));
+		$("input[name=tel]").val(localStorage.getItem("tel"));
+		$('#datail2').val(localStorage.getItem("tel"));
 	}
 	if (localStorage.getItem("email")) {
-		$('#datail3').text(localStorage.getItem("email"));
+		$("input[name=email]").val(localStorage.getItem("email"));
+		$('#datail3').val(localStorage.getItem("email"));
 	}
 	if (localStorage.getItem("addr")) {
-		$('#datail4').text(localStorage.getItem("addr"));
+		$("textarea[name=address]").val(localStorage.getItem("addr"));
+		$('#datail4').val(localStorage.getItem("addr"));
 	}
 	if (localStorage.getItem("book1") != null) {
-		$('#datail5').text(localStorage.getItem("book1"));
+		$('#datail5').val(localStorage.getItem("book1"));
 	}
 	
-	$('#datail6').text(localStorage.getItem("date"));
+	$('#datail6').val(localStorage.getItem("date"));
 	
 	if (localStorage.getItem("day1")) {
-		$('#datail7').text(localStorage.getItem("day1"));
+		$('#datail7').val(localStorage.getItem("day1"));
 	}
 	if (localStorage.getItem("day2")) {
-		$('#datail8').text(localStorage.getItem("day2"));
+		$('#datail8').val(localStorage.getItem("day2"));
 	}
 	if (localStorage.getItem("book3") != null) {
-		$('#datail9').text(localStorage.getItem("book3"));
+		$('#datail9').val(localStorage.getItem("book3"));
 	}
 	if (localStorage.getItem("book2") != null) {
-		$('#datail0').text(localStorage.getItem("book2"));
+		$('#datail0').val(localStorage.getItem("book2"));
 	}
-	
+	$('#datailA').val(localStorage.getItem("total"));
+	$('#price').val(localStorage.getItem("price1")*250+5000+"	    Baht");	
 
 	/*---------------------------------------------------- */
 	/*	Modal Popup
 	------------------------------------------------------ */
 
-    $('.video-link a').magnificPopup({
+    $('.video-link .linkja').magnificPopup({
 
        type:'inline',
        fixedContentPos: false,

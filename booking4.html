@@ -207,7 +207,6 @@
                 </label>
               </div>
             </div>
-
             <div class="input-group">
                <label class="date1">
                   <input type="text" class="form-control" name="date" id="date1" data-select="datepicker" readonly="true">
@@ -222,31 +221,38 @@
                </label>
             </div> 
             <p style="text-align: left;">tips: กรุณาเลือกระยะเวลา และระบุวันที่ต้องการจองคอร์ส</p>  
+            
+            <label style="width: 50%; float: center; margin-top: 20px;">
+               <input type="text" class="form-control" name="price" id="price" readonly="true">
+               <span>Price:</span>
+            </label>
+
          </div>
-         <div class="col-2 bookcol">
-            <a style="margin-top: 13px; width: 50%; height: 50px; line-height: 45px;" class="button stroke" href="booking3.html" title="">SIGN UP</a>
+         <div class="col-2 bookcol login-link">
+            <a style="margin-top: 13px; width: 50%; height: 50px; line-height: 45px;" class="button stroke" href="#login-popup" title="">SIGN UP</a>
             <p style="margin-bottom: 5px;">OR</p>
+            
             <label>
-                <input type="text" tabindex="1" name="name">
+                <input type="text" tabindex="1" name="name" autocomplete="off">
                 <span>Name:</span>
             </label>
             <label>
-                <input type="email" tabindex="2" name="email">
+                <input type="email" tabindex="2" name="email" autocomplete="off">
                 <span>Email:</span>
             </label>
             <label>
-                <input type="text" tabindex="3" name="tel">
+                <input type="text" tabindex="3" name="tel" autocomplete="off">
                 <span>Tel:</span>
             </label>
             <label>
-                <textarea tabindex="4" name="address"></textarea>
+                <textarea tabindex="4" name="address" autocomplete="off"></textarea>
                 <span>Address:</span>
             </label>
          </div>
          </div>
-         <div class="row" style="margin-top: 12rem;">
+         <div class="row" style="margin-top: 6rem;">
             <a class="button stroke" href="booking3.html" title="">BACK</a>
-            <a class="button stroke book4" href="booking5.html" title="">NEXT</a>
+            <a type="submit" class="button stroke book4" href="booking5.html" title="">NEXT</a>
          </div>
       </div>
    </section>

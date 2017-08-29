@@ -25,16 +25,25 @@
   $('input[name="dropp"]').change(function() {
     var value = $("input[name='dropp']:checked").val();
     var num = 3;
+    var prices = 5000;
     $('.js-value').text(value);
     if(value == "3 Days"){
+    	prices = 5000;
     	num = 3;
     }else if(value == "5 Days"){
+    	prices = 7500;
     	num = 5;
     }else if(value == "7 Days"){
+    	prices = 10000;
     	num = 7;
     }else{
+    	prices = 20000;
     	num = 14;
     }
+    localStorage.setItem("price2", prices);
+    var temp1 = localStorage.getItem("price1")*250;
+    var temp2 = parseInt(localStorage.getItem("price2"));
+    $('#price').val(temp1+temp2+"	    Baht");
     var strdate = $('#date1').val().split("/");
     if(strdate != ""){
     var dateza = new Date(strdate[2],strdate[1] -1,strdate[0]);
@@ -42,8 +51,10 @@
     dateza2.setDate(dateza.getDate() + parseInt(num)); 	
 	dateza2.setFullYear(dateza2.getFullYear(), dateza2.getMonth(), dateza2.getDate());
 	$('#date2').val(dateza2.getDate() + '/' + (dateza2.getMonth()+1) + '/' + dateza2.getFullYear());
+
+
 	}
-  })
+  });
   });
 
 	$.datePicker = {
